@@ -1,0 +1,18 @@
+h1= title
+p Welcome to #{title}
+
+a(href="/fms/query")!="Search for PAO"
+
+#provider
+      div.provider
+        div.created_at= provider.created_at
+        div.id= provider._id
+        div.pao 
+            a(href="/fms/"+provider.pao)!= provider.pao
+        div.concID= provider.concID
+        div.devID= provider.devID
+        div.subs_status= provider.subs_status
+        div.auth_status= provider.auth_status
+        div.route= provider.route
+        div.dev_man= provider.dev_man
+        div.for_key= provider.for_key
